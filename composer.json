@@ -1,0 +1,29 @@
+{
+  "name": "xxgail/gvis",
+  "description": "Visual Intelligence Service",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "xxgail",
+      "email": "xxxggggail@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "alibabacloud/cs": "^1.8",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "XXGail\\Gvis\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "XXGail\\Gvis\\ServiceProvider"
+      ]
+    }
+  }
+}
