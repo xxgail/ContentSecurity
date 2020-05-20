@@ -1,6 +1,6 @@
 {
-  "name": "xxgail/gvis",
-  "description": "Visual Intelligence Service",
+  "name": "xxgail/ContentSecurity",
+  "description": "Content Security",
   "type": "project",
   "license": "MIT",
   "authors": [
@@ -12,11 +12,11 @@
   "minimum-stability": "dev",
   "require": {
     "alibabacloud/cs": "^1.8",
-    "guzzlehttp/guzzle": "^6.3"
+    "guzzlehttp/guzzle": "^6.5"
   },
   "autoload": {
     "psr-4": {
-      "XXGail\\Gvis\\": "src/"
+      "XXGail\\ContentSecurity\\": "src/"
     }
   },
   "extra": {
@@ -25,7 +25,7 @@
     },
     "laravel": {
       "providers": [
-        "XXGail\\Gvis\\ServiceProvider"
+        "XXGail\\ContentSecurity\\ServiceProvider"
       ]
     }
   }

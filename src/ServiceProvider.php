@@ -1,6 +1,6 @@
 <?php
 
-namespace XXGail\Gvis;
+namespace XXGail\ContentSecurity;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Illuminate\Routing\Router;
@@ -15,7 +15,9 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
-
+        $this->publishes([
+            __DIR__.'/path/to/config/content_security.php' => config_path('content_security.php'),
+        ]);
     }
 
     /**
